@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fenAffichage</class>
+ <widget class="QMainWindow" name="fenAffichage">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>742</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>620</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Résultats Affichage</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icone_gpe.png</normaloff>icone_gpe.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Req1</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Rappel de la requête</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>80</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelReq">
+              <property name="sizeIncrement">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="autoFillBackground">
+               <bool>true</bool>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="text">
+               <string>Type: info1        Produit : info2        Classement par : info3         Ordre : info4         Nombre résultats affichés : info5</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::AutoText</enum>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+              <property name="margin">
+               <number>0</number>
+              </property>
+              <property name="indent">
+               <number>5</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>80</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Résultats</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QTableView" name="tableView">
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="midLineWidth">
+             <number>0</number>
+            </property>
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="sortingEnabled">
+             <bool>false</bool>
+            </property>
+            <attribute name="verticalHeaderStretchLastSection">
+             <bool>false</bool>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>742</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionEnregistrer_les_r_sultats"/>
+    <addaction name="actionImprimer"/>
+    <addaction name="actionActualiser_l_onglet"/>
+    <addaction name="separator"/>
+    <addaction name="actionOnglet_pr_c_dent"/>
+    <addaction name="actionOnglet_suivant"/>
+    <addaction name="separator"/>
+    <addaction name="actionFermer_l_onget_courant"/>
+    <addaction name="actionQuitter_la_fen_tre"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionPr_f_rences"/>
+    <addaction name="actionD_placer_dans_une_nouvelle_fen_tre"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionA_propos_de_Qt"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionEnregistrer_les_r_sultats"/>
+   <addaction name="actionImprimer"/>
+   <addaction name="separator"/>
+   <addaction name="actionActualiser_l_onglet"/>
+   <addaction name="actionD_placer_dans_une_nouvelle_fen_tre"/>
+   <addaction name="actionPr_f_rences"/>
+   <addaction name="separator"/>
+   <addaction name="actionOnglet_pr_c_dent"/>
+   <addaction name="actionOnglet_suivant"/>
+   <addaction name="separator"/>
+   <addaction name="actionFermer_l_onget_courant"/>
+   <addaction name="actionQuitter_la_fen_tre"/>
+  </widget>
+  <action name="actionQuitter_la_fen_tre">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_quitter.png</normaloff>icone_quitter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter la fenêtre</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionPr_f_rences">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_preferences.png</normaloff>icone_preferences.png</iconset>
+   </property>
+   <property name="text">
+    <string>Préférences</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_les_r_sultats">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_enregistrer.png</normaloff>icone_enregistrer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer les résultats</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionA_propos_de_Qt">
+   <property name="text">
+    <string>A propos de Qt</string>
+   </property>
+  </action>
+  <action name="actionFermer_l_onget_courant">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_fermer.png</normaloff>icone_fermer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fermer l'onget courant</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionOnglet_suivant">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_suivant.png</normaloff>icone_suivant.png</iconset>
+   </property>
+   <property name="text">
+    <string>onglet suivant</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Tab</string>
+   </property>
+  </action>
+  <action name="actionOnglet_pr_c_dent">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_precedent.png</normaloff>icone_precedent.png</iconset>
+   </property>
+   <property name="text">
+    <string>onglet précédent</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Backtab</string>
+   </property>
+  </action>
+  <action name="actionImprimer">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_imprimer.png</normaloff>icone_imprimer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Imprimer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionActualiser_l_onglet">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_actualiser.png</normaloff>icone_actualiser.png</iconset>
+   </property>
+   <property name="text">
+    <string>Actualiser l'onglet</string>
+   </property>
+  </action>
+  <action name="actionD_placer_dans_une_nouvelle_fen_tre">
+   <property name="icon">
+    <iconset>
+     <normaloff>icone_deplacerFen.png</normaloff>icone_deplacerFen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Déplacer dans une nouvelle fenêtre</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
